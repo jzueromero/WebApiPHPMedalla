@@ -6,7 +6,7 @@ include_once 'db.php';
 /**
  * 
  */
-class ClassName extends DB
+class Categorias extends DB
 {
 	
 	function obtenerCategorias()
