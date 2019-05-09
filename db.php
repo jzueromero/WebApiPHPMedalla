@@ -42,7 +42,10 @@ class DB{
 
 
 
+/*
 
+CREATE TABLE `Libreria_productos`.`Categorias` ( `id` INT NOT NULL AUTO_INCREMENT , `Categoria` VARCHAR(60) NOT NULL , `Imagen` VARCHAR(60) NULL DEFAULT NULL , `Otros` VARCHAR(60) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+*/
 
 
 ?>
