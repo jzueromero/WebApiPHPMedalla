@@ -24,7 +24,7 @@ class apiCategorias {
 
 					array_push($categorias['items'], $item);
 				}
-
+				header('Content-Type: application/json');
 				echo json_encode($categorias);
 
 			}
