@@ -16,5 +16,25 @@ class Categorias extends DB
 		return $query;
 
 	}
+
+
+	/*
+	Segunda funcionalidad por id
+	*/
+
+	function obtenerCategoria($id)
+	{
+		$query = $this->connect()->prepare('SELECT  * FROM categorias where id= :id');
+		$query->execute(['id' => $id]);
+
+		return $query;
+
+	}
+
+	/*
+	Segunda funcionalidad por id
+	*/
+
+
 }
 ?>
