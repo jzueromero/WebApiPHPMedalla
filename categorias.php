@@ -35,6 +35,23 @@ class Categorias extends DB
 	Segunda funcionalidad por id
 	*/
 
+	/*
+	Tercera funcionalidad, agregar categoria
+	*/
+
+	function nuevaCategoria($categoria)
+	{
+
+		$query = $this->connect()->prepare('INSERT INTO categorias (Categoria, Imagen, Otros) values (:categoria, :imagen, :otros)');
+		$query->execute(['categoria' => $categoria['nombre'], 'imagen' => $categoria['imagen'], 'otros' => $categoria['otros']]);
+
+		return $query;
+	}
+
+	/*
+	Tercera funcionalidad, agregar categoria
+	*/
+
 
 }
 ?>
