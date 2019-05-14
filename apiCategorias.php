@@ -91,6 +91,30 @@ class apiCategorias {
 
 		}
 
+		/*
+		Tercera funcionalidad 
+		para agregar una categoria en la base de datos
+		*/
+
+		function agregarCategoria($item)
+		{
+				$categoria = new categorias();
+				$res = $categoria->nuevaCategoria($item);
+				$this->exito('Nueva Pelicula registrada');
+
+
+		}
+
+		function exito($mensaje)
+		{
+			echo json_encode(array('mensaje'=>$mensaje));	
+		}
+
+		/*
+		Tercera funcionalidad 
+		para agregar una categoria en la base de datos
+		*/
+
 //fin de la clase
 }
 

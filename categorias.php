@@ -43,7 +43,9 @@ class Categorias extends DB
 	{
 
 		$query = $this->connect()->prepare('INSERT INTO categorias (Categoria, Imagen, Otros) values (:categoria, :imagen, :otros)');
-		$query->execute(['categoria' => $categoria['nombre'], 'imagen' => $categoria['imagen'], 'otros' => $categoria['otros']]);
+		$query->execute(['categoria' => $categoria['categoria'], 
+						'imagen' => $categoria['imagen'], 
+						'otros' => $categoria['otros']]);
 
 		return $query;
 	}
